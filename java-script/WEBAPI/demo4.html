@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/afternoon.png" alt="">
+    <div>morning</div>
+
+
+
+<script>
+    var img = document.querySelector('img');
+    var div = document.querySelector('div');
+    var date = new Date();
+    var h = date.getHours();
+        if(h < 12){
+            img.src = './img/morning.jpg';
+            div.innerHTML = 'good morning';
+        }else if (h< 18){
+            img.src = './img/afternoon.png';
+            div.innerHTML = 'good afternoon';
+        }else{
+            img.src = './img/evening.jpg';
+            div.innerHTML = 'good afternoon';
+        }
+    
+</script>
+</body>
+</html>
