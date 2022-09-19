@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <button>123</button>
+    <button>123</button>
+    <button>123</button>
+    <button>123</button>
+    <button>123</button>
+    <button>123</button>
+    <script>
+        $(function () {
+            $('button').click(function () {
+                $(this).css('background', 'pink');
+                $(this).siblings('button').css('background', '');
+            });
+        })
+
+    </script>
+</body>
+
+</html>

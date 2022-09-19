@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: all 0.5s;
+        }
+
+        .current {
+            background-color: aquamarine;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        $(function () {
+            // $('div').css('width','300px');
+            // $('div').css({
+            //     width:400,
+            //     backgroundColor:'red'
+            // })
+
+            // $('div').click(function () {
+            //     $(this).addClass('current')
+            // })
+
+            // $('div').click(function () {
+            //     $(this).removeClass('current')
+            // })
+
+            $('div').click(function(){
+                $(this).toggle('current')
+            })
+        })
+
+    </script>
+
+</html>

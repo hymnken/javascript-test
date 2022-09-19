@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="../js/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="nav">
+        <p>woshi11</p>
+        <div>
+            <p>ghhh</p>
+        </div>
+    </div>
+    <script>
+        $(function(){
+              console.log($('.son').parent());
+
+              $('.nav').children('p').css('color','red');
+
+              $('.nav').find('p').css('color', 'red');
+        })
+    </script>
+</body>
+</html>
