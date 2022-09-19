@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <!-- <script type="text/javascript" src="../js/vue.js"></script> -->
+    <script src="../js/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <script>
+        // $('div').css('color','red')
+        $(function(){
+            // var sum = 0;
+            var arr = ['red','green','blue'];
+            // $('div').each(function(i,domEle){
+            //     console.log(i);
+            //     // $(domEle).css('color','pink')
+            //     $(domEle).css('color',arr[i])
+            //     sum += parseInt($(domEle).text());
+            // })
+            // console.log(sum);
+
+            $.each(arr,function(i,ele){
+                console.log(i);
+                console.log(ele);
+            })
+
+            $.each({
+                name:'andy',
+                age:20
+            },function(i,ele){
+                console.log(i);
+                console.log(ele);
+            })
+        })
+    </script>
+</body>
+</html>

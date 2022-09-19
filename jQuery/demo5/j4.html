@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <!-- <script type="text/javascript" src="../js/vue.js"></script> -->
+    <script src="../js/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1231233</li>
+    </ul>
+    <div class="test">divdiv</div>
+
+    <script>
+        $(function(){
+            var li = $('<li>backback</li>');
+            // $('ul').append(li);
+            $('ul').prepend(li);
+
+
+            var div = $('<div>woshihoumashengde</div>')
+            // $('.test').after(div);
+            $('.test').before(div);
+
+
+
+            // $('ul').remove()
+            //  $('ul').empty()
+            // $('ul').html('')
+
+        })
+
+        
+
+    </script>
+</body>
+
+</html>

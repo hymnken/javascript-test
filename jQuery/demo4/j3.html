@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <!-- <script type="text/javascript" src="../js/vue.js"></script> -->
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>TEST!</h1> -->
+    <button>move</button>
+    <div></div>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                $('div').animate({
+                    left:500,
+                    top:300,
+                    opacity:.4,
+                    width:500
+                },500);
+            })
+        })
+    </script>
+</body>
+</html>
